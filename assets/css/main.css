@@ -74,6 +74,15 @@ hr {
   padding: 0;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-image {
+  margin: 0 auto;
+}
 /* .navbar {
   text-transform: uppercase;
   margin-bottom: 0px;
