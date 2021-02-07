@@ -1,8 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+html,
+body {
+  height: 100%;
+}
 
 body {
   background-color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #555;
@@ -34,12 +38,8 @@ p {
   font-size: 16px;
 }
 
-.centered {
-  text-align: center;
-}
-
 a {
-  color: #1abc9c;
+  color: #ccc;
   word-wrap: break-word;
 
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -51,7 +51,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #7b7b7b;
+  color: #fff;
   text-decoration: none;
   outline: 0;
 }
@@ -74,6 +74,35 @@ hr {
   padding: 0;
 }
 
+.centered {
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.container {
+  width: auto;
+  max-width: 900px;
+  padding: 0 15px;
+}
+
+.navbar {
+  background-color: #3c5560;
+  border-radius: 0;
+}
+
+.navbar-link {
+  font-size: 18px;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -82,49 +111,12 @@ hr {
 
 .card-image {
   margin: 0 auto;
-}
-/* .navbar {
-  text-transform: uppercase;
-  margin-bottom: 0px;
+  box-shadow: 0 0 3px 1px #a7a7a7;
 }
 
-.navbar-inverse {
-  padding-bottom: 70px;
-  padding-top: 70px;
+.card-text {
+  margin-top: 10px;
 }
-
-.navbar-inverse {
-  background-color: #1abc9c;
-  border-color: #16a085;
-}
-
-.navbar-inverse .navbar-nav > li > a {
-  color: white;
-}
-
-.navbar-inverse .navbar-nav > li > a:hover {
-  color: #222222;
-}
-
-.navbar-brand {
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-
-.navbar-inverse .navbar-brand {
-  color: white;
-}
-
-.navbar-inverse .navbar-toggle {
-  border-color: transparent;
-} */
-
-/* .progress-bar-theme {
-  background-color: #1abc9c;
-} */
-
-/* Helpers */
 
 .mt {
   margin-top: 40px;
@@ -136,45 +128,15 @@ hr {
   padding-bottom: 50px;
 }
 
-/* +++++ WRAP SECTIONS +++++ */
-
-#ww {
-  padding-top: 70px;
-  padding-bottom: 70px;
-  background-color: #f2f2f2;
+.footer {
+  flex: 0 0 auto;
+  text-align: center;
+  background-color: #4b6a78;
+  padding-top: 15px;
+  padding-bottom: 14px;
 }
 
-#footer {
-  background-color: #2f2f2f;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-#footer p {
-  color: white;
-}
-
-#footer h4 {
-  color: white;
-  text-transform: uppercase;
-  padding-bottom: 20px;
-}
-
-/* +++++ Color Wraps / Blog Page +++++ */
-
-/* #grey {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #f2f2f2;
-}
-
-#white {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #ffffff;
-} */
-
-/* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
+/* ================== IMAGES HOVER EFFECTS ================== */
 /* Effects also are controled by hover.zoom.js */
 .zoom {
   display: block;
@@ -208,5 +170,5 @@ hr {
 
 .glyphicon {
   font-size: 40px;
-  color: #1abc9c;
+  color: #bc1a27;
 }
