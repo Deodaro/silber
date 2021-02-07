@@ -1,7 +1,6 @@
 $(function () {
   $('.colored').hoverZoom({
-    // overlayColor: '#4b6a78',
-    overlayColor: 'rgba(75, 106, 120, .7)',
+    overlayColor: '#8197a1',
     zoom: 0,
   });
 
